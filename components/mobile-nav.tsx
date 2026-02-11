@@ -19,13 +19,6 @@ export function MobileNav({ navLinks }: MobileNavProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
 
-  function scrollToNewsletter() {
-    const el = document.getElementById('newsletter')
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   return (
     <>
       <div className='flex items-center gap-2 md:hidden'>
@@ -67,15 +60,6 @@ export function MobileNav({ navLinks }: MobileNavProps) {
               {link.label}
             </Link>
           ))}
-          <button
-            onClick={() => {
-              setMobileOpen(false)
-              scrollToNewsletter()
-            }}
-            className='w-full rounded-lg bg-primary max-w-8xl py-2.5 text-center text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90'
-          >
-            Subscribe
-          </button>
         </div>
       </div>
 

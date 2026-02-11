@@ -11,7 +11,6 @@ const footerLinks = {
     { label: 'About', href: '/about' },
     { label: 'Style Guide', href: '#' },
     { label: 'RSS Feed', href: '#' },
-    { label: 'Newsletter', href: '#' },
   ],
   Connect: [
     { label: 'Twitter', href: '#' },
@@ -22,7 +21,7 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className='border-t border-border/40 bg-card/30'>
+    <footer className='border-t border-border/40 bg-gradient-to-t from-primary/10 via-card/40 to-background'>
       <div className='mx-auto max-w-8xl px-4 py-12 sm:px-6 sm:py-16'>
         <div className='grid gap-8 sm:grid-cols-2 lg:grid-cols-4'>
           <div>

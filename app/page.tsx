@@ -2,7 +2,6 @@ import { Navbar } from '@/components/navbar'
 import { Hero } from '@/components/hero'
 import { SectionHeading } from '@/components/section-heading'
 import { BlogCard } from '@/components/blog-card'
-import { NewsletterCta } from '@/components/newsletter-cta'
 import { Footer } from '@/components/footer'
 import { getAllPosts, getFeaturedPosts } from '@/lib/strapi'
 import Link from 'next/link'
@@ -102,8 +101,6 @@ export default async function Page() {
             </div>
           </section>
         )}
-
-        <NewsletterCta />
       </main>
 
       <Footer />

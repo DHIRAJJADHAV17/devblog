@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { ArrowLeft, Calendar, Clock, Share2, User } from 'lucide-react'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
-import { NewsletterCta } from '@/components/newsletter-cta'
 import { BlogCard } from '@/components/blog-card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -116,8 +115,6 @@ export default async function BlogPostPage({
               {post.title}
             </h1>
 
-            <p className='mt-4 text-lg text-muted-foreground'>{post.excerpt}</p>
-
             {post.authorName && (
               <div className='mt-4 flex items-center gap-1.5 text-sm text-muted-foreground'>
                 <User className='h-4 w-4' />
@@ -140,9 +137,6 @@ export default async function BlogPostPage({
                   {post.readingTime}
                 </span>
               </div>
-              <Button variant='ghost' size='sm' className='gap-2'>
-                <Share2 className='h-4 w-4' />
-              </Button>
             </div>
           </div>
         </section>
@@ -186,8 +180,6 @@ export default async function BlogPostPage({
             </div>
           </section>
         )}
-
-        <NewsletterCta />
       </main>
 
       <Footer />

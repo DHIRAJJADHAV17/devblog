@@ -36,12 +36,9 @@ export function Navbar() {
           ))}
         </div>
 
-        {/* Desktop: Search + Subscribe */}
+        {/* Desktop: Search */}
         <div className='hidden items-center gap-3 md:flex'>
           <SearchTrigger />
-          <button className='rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90'>
-            Subscribe
-          </button>
         </div>
 
         {/* Mobile: Search icon + Hamburger */}

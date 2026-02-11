@@ -2,7 +2,6 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { BlogCard } from '@/components/blog-card'
 import { CategoryFilter } from '@/components/category-filter'
-import { NewsletterCta } from '@/components/newsletter-cta'
 import { SectionHeading } from '@/components/section-heading'
 import { Pagination } from '@/components/pagination'
 import {
@@ -118,8 +117,6 @@ export default async function BlogPage({
             )}
           </div>
         </section>
-
-        <NewsletterCta />
       </main>
 
       <Footer />

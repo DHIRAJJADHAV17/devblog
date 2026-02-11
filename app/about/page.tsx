@@ -1,6 +1,5 @@
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
-import { NewsletterCta } from '@/components/newsletter-cta'
 import Image from 'next/image'
 import { Code2, Users, Zap, Target } from 'lucide-react'
 import type { Metadata } from 'next'
@@ -236,8 +235,6 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-
-        <NewsletterCta />
       </main>
 
       <Footer />
