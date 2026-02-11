@@ -93,7 +93,7 @@ export async function POST(req: NextRequest) {
   )
 
   // 1) Invalidate Strapi fetch cache (tagged in lib/strapi.ts)
-  for (const t of uniqueTags) revalidateTag(t)
+  for (const t of uniqueTags) revalidateTag(t, "max")
 
   // 2) Also invalidate route caches that depend on Strapi data
   revalidatePath("/")
